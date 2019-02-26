@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>210</width>
+    <width>250</width>
     <height>60</height>
    </rect>
   </property>
@@ -17,7 +17,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Small Timer</string>
+   <string>TinyTimer</string>
   </property>
   <property name="locale">
    <locale language="English" country="UnitedStates"/>
@@ -26,9 +26,9 @@
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>-1</x>
       <y>0</y>
-      <width>250</width>
+      <width>251</width>
       <height>60</height>
      </rect>
     </property>
@@ -38,34 +38,16 @@
       <height>60</height>
      </size>
     </property>
-    <property name="styleSheet">
-     <string notr="true">QFrame{
-    background-color: deepskyblue;
-}</string>
-    </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
     </property>
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QPushButton" name="startBtn">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>41</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Start</string>
-     </property>
-    </widget>
     <widget class="QLabel" name="timerLabel">
      <property name="geometry">
       <rect>
-       <x>80</x>
+       <x>120</x>
        <y>0</y>
        <width>131</width>
        <height>41</height>
@@ -84,18 +66,49 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QPushButton" name="resetBtn">
+    <widget class="QWidget" name="">
      <property name="geometry">
       <rect>
-       <x>40</x>
+       <x>0</x>
        <y>0</y>
-       <width>41</width>
+       <width>111</width>
        <height>41</height>
       </rect>
      </property>
-     <property name="text">
-      <string>Reset</string>
-     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="horizontalSpacing">
+       <number>1</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>4</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="startBtn">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Start</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="resetBtn">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Reset</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </widget>
   </widget>
@@ -104,7 +117,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>210</width>
+     <width>250</width>
      <height>21</height>
     </rect>
    </property>
@@ -126,8 +139,14 @@
     <addaction name="actionHelp"/>
     <addaction name="actionAbout"/>
    </widget>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+   </widget>
    <addaction name="menuFile"/>
    <addaction name="menuProgram"/>
+   <addaction name="menuOptions"/>
    <addaction name="menuHelp"/>
   </widget>
   <action name="actionProgram_List">

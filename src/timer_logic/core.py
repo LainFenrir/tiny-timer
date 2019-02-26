@@ -1,11 +1,6 @@
 import time
 from PyQt5.QtCore import QTimer, QTime, pyqtSignal, QObject
 
-# TODO: fazer o botão start iniciar o timer
-# mostrar o timer rodando
-# ao apertar o botão de novo parar o timer
-# mudar o botão de start para pause
-
 
 class StopWatch(QObject):
     timer_tic = pyqtSignal(str)
