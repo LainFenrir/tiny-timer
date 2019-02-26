@@ -131,6 +131,9 @@
      <string>Program</string>
     </property>
     <addaction name="actionProgram_List"/>
+    <addaction name="separator"/>
+    <addaction name="actionBasic_Timer_Mode"/>
+    <addaction name="actionProgram_Tracker_mode"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
@@ -143,6 +146,7 @@
     <property name="title">
      <string>Options</string>
     </property>
+    <addaction name="actionSet_Distraction_Free_MoDE"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuProgram"/>
@@ -162,6 +166,21 @@
   <action name="actionAbout">
    <property name="text">
     <string>About</string>
+   </property>
+  </action>
+  <action name="actionSet_Distraction_Free_MoDE">
+   <property name="text">
+    <string>Distraction Free Mode</string>
+   </property>
+  </action>
+  <action name="actionBasic_Timer_Mode">
+   <property name="text">
+    <string>Basic Timer Mode</string>
+   </property>
+  </action>
+  <action name="actionProgram_Tracker_mode">
+   <property name="text">
+    <string>Program Tracker Mode</string>
    </property>
   </action>
  </widget>

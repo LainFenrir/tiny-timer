@@ -3,7 +3,7 @@ import os
 from PyQt5.QtCore import pyqtSlot, Qt
 from PyQt5.QtWidgets import QMainWindow
 from timer_logic.core import StopWatch
-from ui.SmallTimer_main import Ui_MainWindow
+from ui.TinyTimer_Main import Ui_MainWindow
 from utils.styles_window import STATE_DEFAULT, STATE_RUNNING, STATE_STOP
 
 
